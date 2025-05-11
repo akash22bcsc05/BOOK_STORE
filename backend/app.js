@@ -18,6 +18,10 @@ app.use("/api/v1", Cart);
 app.use("/api/v1", Order);
 
 //creating port
-app.listen(process.env.PORT, () => {
-    console.log(`Server Started at PORT ${process.env.PORT}`);
+// app.listen(process.env.PORT, () => {
+//     console.log(`Server Started at PORT ${process.env.PORT}`);
+// });
+const PORT = process.env.PORT || 3000;  // Use 3000 or any other port for local development
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
