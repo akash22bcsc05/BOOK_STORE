@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import axios from 'axios'
 import Loader from '../components/Loader/Loader'
+import MobileNav from '../components/Profile/MobileNav'
 const Profile = () => {
   //const isLoggedIn = useSelector();
   const [Profile, setProfile] = useState();
@@ -14,7 +15,7 @@ const Profile = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:5000/api/v1/get-user-information",
+        "http://localhost:1000/api/v1/get-user-information",
         { headers }
       );
       setProfile(response.data);
@@ -23,7 +24,7 @@ const Profile = () => {
   }, [])
 
   return (
-    <div className="bg-zinc-900 px-2 md:px-12 flex flex-col md:flex-row h-screen py-8 gap-4 text-white">
+    <div className="bg-zinc-900 px-2 md:px-12 flex flex-col md:flex-row  py-8 gap-4 text-white">
       {!Profile && (
       <div className='w-full h-[100%] flex justify-center items-center'>
         <Loader />
@@ -32,10 +33,11 @@ const Profile = () => {
       {
         Profile && (
         <>
-        <div className="w-1/6">
-          <Sidebar />
+        <div className="w-full md:w-1/6 h-auto lg:h-screen">
+          <Sidebar data={Profile}/>
+          <MobileNav />
         </div>
-        <div className='w-5/6'>
+        <div className='w-full md:w-5/6'>
           <Outlet />
         </div>
       </>
