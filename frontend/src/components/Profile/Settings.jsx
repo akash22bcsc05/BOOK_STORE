@@ -20,7 +20,7 @@ const Settings = () => {
     const fetch = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/get-user-information",
+          "https://book-store-vdd0.onrender.com/api/v1/get-user-information",
           { headers }
         );
         setProfileData(response.data);
@@ -37,7 +37,7 @@ const Settings = () => {
   const submitAddress = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/update-address",
+        "https://book-store-vdd0.onrender.com/api/v1/update-address",
         Value,
         { headers }
       );

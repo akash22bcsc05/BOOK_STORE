@@ -20,7 +20,7 @@ const AllOrders = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/get-all-orders",
+          "https://book-store-vdd0.onrender.com/api/v1/get-all-orders",
           { headers }
         );
         setAllOrders(response.data.data || []);
@@ -34,7 +34,7 @@ const AllOrders = () => {
   const handleStatusChange = async (orderId, newStatus) => {
     try {
       await axios.put(
-        `http://localhost:1000/api/v1/update-order-status/${orderId}`,
+        `https://book-store-vdd0.onrender.com/api/v1/update-order-status/${orderId}`,
         { status: newStatus },
         { headers }
       );

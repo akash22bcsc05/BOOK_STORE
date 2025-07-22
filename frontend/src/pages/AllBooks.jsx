@@ -9,7 +9,7 @@ const AllBooks = () => {
         const fetch = async () => {
             const response =
                 await axios.get(
-                    "http://localhost:1000/api/v1/get-all-books"
+                    "https://book-store-vdd0.onrender.com/api/v1/get-all-books"
                 );
             setData(response.data.data);
         };

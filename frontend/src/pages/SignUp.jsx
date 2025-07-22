@@ -21,7 +21,7 @@ const SignUp = () => {
       }
       else{
         const response = await axios.post(
-          "http://localhost:1000/api/v1/sign-up",
+          "https://book-store-vdd0.onrender.com/api/v1/sign-up",
           Values
         );
         alert(response.data.message);
