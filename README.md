@@ -71,3 +71,15 @@ npm install
 cd/BOOK_STORE/frontend
 npm install
 npm run dev
+
+<img width="2159" height="1231" alt="Screenshot 2025-07-22 231742" src="https://github.com/user-attachments/assets/ee0c8f3e-3d51-4d9c-b5e7-4b039326423a" />
+<img width="2159" height="1236" alt="Screenshot 2025-07-22 231756" src="https://github.com/user-attachments/assets/3be40d67-4c07-41ac-b742-1faf0b7228c6" />
+<img width="2159" height="1211" alt="Screenshot 2025-07-22 231846" src="https://github.com/user-attachments/assets/41955033-ed77-46f6-b8a6-51660c9b19ee" />
+<img width="2158" height="1226" alt="Screenshot 2025-07-22 231915" src="https://github.com/user-attachments/assets/b1ea3008-932b-4ec1-ab2f-890f350f8fc8" />
+
+## 🧑‍💻 Contributing
+Want to improve this project? Found a bug?
+Feel free to fork the repo, make your changes, and submit a pull request. Contributions are warmly welcomed!
+
+🙋‍♂️ Author
+Akash Kumar
